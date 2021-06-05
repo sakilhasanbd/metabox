@@ -49,6 +49,7 @@ register_activation_hook( __FILE__, 'own_db_function' );
     
 function custom_data_insert(){
     global $wpdb;
+    
     $welcome_name = 'Mr. WordPress';
     
     $email = 'Congratulations, you just completed the installation!';
