@@ -35,6 +35,9 @@ $owntable_version = '1.0';
 
 function load_admin_css_javaScript(){
     wp_enqueue_style( 'css-grid-handler', plugins_url('inc/css/bootstrap-grid.css',__FILE__));
+    wp_enqueue_style( 'css-utilities-handler', plugins_url('inc/css/bootstrap-utilities.css',__FILE__));
+    wp_enqueue_style( 'bootstrap-css-handler', plugins_url('inc/css/bootstrap.css',__FILE__));
+    wp_enqueue_style( 'bootstrap-min-css-handler', plugins_url('inc/css/bootstrap.min.css',__FILE__));
 }
 add_action( 'admin_enqueue_scripts', 'load_admin_css_javaScript');
 
