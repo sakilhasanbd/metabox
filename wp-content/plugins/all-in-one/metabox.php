@@ -30,6 +30,16 @@ global $owntable_version;
 $owntable_version = '1.0';
 
  
+
+// Admin Bootstrap and javaScript
+
+function load_admin_css_javaScript(){
+    wp_enqueue_style( 'css-grid-handler', plugins_url('inc/css/bootstrap-grid.css',__FILE__));
+}
+add_action( 'admin_enqueue_scripts', 'load_admin_css_javaScript');
+
+
+
  
 /**
 * Activate the plugin.
